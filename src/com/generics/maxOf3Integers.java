@@ -2,22 +2,24 @@ package com.generics;
 
 public class maxOf3Integers {
 public static void main(String[] args) {
-		
-		Integer a=2, b=4, c=6;
-	    findMaximum(a,b,c);
-	    
+	
+		Float x=3.6f, y=5.6f, z=9.5f;
+	
+	    findMaximum(x,y,z);
+	   
 	}
 	 
-	private static void findMaximum(Integer a, Integer b, Integer c) {
-		Integer max=a;
-		if(b.compareTo(a) > 0) {
-			max = b;
+		private static void findMaximum(Float x, Float y, Float z) {
+			Float max=x;
+			if(y.compareTo(x) > 0) {
+				max = y;
+			}
+			if(z.compareTo(max) > 0) {
+				max = z;
+				System.out.println(max);
 		}
-		if(c.compareTo(max) > 0) {
-			max = c;
-			System.out.println(max);
-	}
-	
-  }
+		
+			
+     }
 
 }
